@@ -72,3 +72,7 @@ Run the Codex skill validator:
 ```powershell
 python "$env:USERPROFILE\.codex\skills\.system\skill-creator\scripts\quick_validate.py" "$env:USERPROFILE\.codex\skills\bg-game-translation-qa"
 ```
+
+## License
+
+MIT
