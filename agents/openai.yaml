@@ -1,0 +1,7 @@
+interface:
+  display_name: "Bulgarian Game Localization QA"
+  short_description: "QA Bulgarian game localization files"
+  default_prompt: "Use $bg-game-translation-qa to translate, review, or QA-check Bulgarian game localization files while preserving structure, keys, placeholders, tags, and terminology."
+
+policy:
+  allow_implicit_invocation: true
