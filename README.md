@@ -26,7 +26,7 @@ The skill instructs Codex to:
 
 ## Relationship to `bg-text`
 
-This skill can be used together with `bg-text`, but it should not depend on it. Use `bg-text` as a companion for Bulgarian typography, grammar, punctuation, and general editorial quality. The game localization rules in this skill take priority whenever file structure, placeholders, tags, keys, IDs, or project terminology could be affected.
+This skill can be used together with [`bg-text`](https://github.com/AcTePuKc/bg-text), but it should not depend on it. Use `bg-text` as a companion for Bulgarian typography, grammar, punctuation, and general editorial quality. The game localization rules in this skill take priority whenever file structure, placeholders, tags, keys, IDs, or project terminology could be affected.
 
 ## Files
 
