@@ -64,7 +64,9 @@ If the destination already exists, remove or replace it intentionally.
 
 ## Using Outside Codex
 
-The skill format is Codex-specific, but the guidance is reusable. For other AI tools, copy the relevant instructions from `SKILL.md` together with the checklist and placeholder rules from `references/`.
+The canonical skill is written for Codex, but this repository also includes lightweight adapter entrypoints for agents that scan `.agents`, `.claude`, `.cursor`, or `.gemini` folders.
+
+For tools without skill support, copy the relevant instructions from `SKILL.md` together with the checklist and placeholder rules from `references/`.
 
 Recommended prompt pattern:
 
@@ -75,13 +77,20 @@ Translate or edit only user-facing text.
 List uncertain strings separately.
 ```
 
-## Validation
+## Validation and Sanity Checks
 
-Run the Codex skill validator:
+For Codex, run the skill validator against the installed skill:
 
 ```powershell
 python "$env:USERPROFILE\.codex\skills\.system\skill-creator\scripts\quick_validate.py" "$env:USERPROFILE\.codex\skills\bg-game-translation-qa"
 ```
+
+For non-Codex adapters, there is no shared validator in this repository. Before publishing, check that:
+
+- the root `SKILL.md` remains the canonical source of truth
+- `.agents`, `.claude`, `.cursor`, and `.gemini` adapter files are intentionally identical
+- adapter paths to `../../../references/` still resolve from each adapter folder
+- no adapter weakens the structure, key, placeholder, tag, or minimal-edit safety rules
 
 ## License
 
