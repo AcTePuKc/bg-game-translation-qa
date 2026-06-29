@@ -23,6 +23,7 @@ Use this reference for practical Bulgarian game localization choices. It is a st
 - When player gender is unknown, prefer neutral constructions where possible.
 - Avoid adding gendered adjectives or participles unless the string has gender context.
 - Match formality to the game world and speaker relationship.
+- Do not default to formal `Вие` for player-facing UI, tutorials, objectives, or generic prompts. Prefer informal singular or neutral phrasing unless the project style requires formal address.
 - Keep consistent address style within the same character, faction, or UI system.
 
 ## Game-Specific Translation
@@ -36,6 +37,7 @@ Use this reference for practical Bulgarian game localization choices. It is a st
 ## Common Risks
 
 - Literal English syntax that sounds unnatural in Bulgarian.
+- Register drift: translating generic English `you` as formal `Вие` in normal player-facing UI when the project tone is informal or neutral.
 - Translation ballast: literal fragments that are technically correct but unnecessary in Bulgarian UI text, such as redundant `through the air`, `into pieces`, `apart`, `nearby`, `on the ground`, or `in front of you`. Flag for manual review, not automatic removal.
 - Russian or Ukrainian lexical leftovers in Bulgarian text.
 - Overlong UI strings that will not fit buttons, tabs, or compact HUD elements.

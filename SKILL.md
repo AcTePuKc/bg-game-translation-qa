@@ -54,6 +54,18 @@ Prefer culturally appropriate Bulgarian translation over transliteration when po
 
 When speaker or player gender is unknown, avoid forced gendered phrasing where Bulgarian allows a neutral construction. Do not introduce Russian- or Ukrainian-sounding phrasing. Avoid unnecessary capitalization copied from English headings, item names, or UI labels unless the project style requires it.
 
+### Address and Register
+
+Do not default to formal `Вие` / `-те` phrasing for player-facing game UI, tutorials, prompts, objectives, or generic system messages. Prefer informal singular `ти` / `-ш` or a natural neutral construction unless the project glossary, character voice, setting, or source context clearly requires formal address.
+
+Flag mismatched address/register as a QA issue, especially when English `you` was translated as formal Bulgarian without evidence that the game uses formal player address.
+
+Examples:
+
+- `You have to do this.` -> prefer `Трябва да направиш това.` or `Това трябва да се направи.` depending on context
+- avoid defaulting to `Вие трябва да направите това.` in normal player-facing UI
+- keep formal address for nobles, officials, customer-service-like UI, intentionally distant narration, or projects whose established style uses `Вие`
+
 ### Translation Ballast
 
 Flag source phrases that are technically translated but add unnecessary weight in Bulgarian UI text. Treat these as QA warnings for manual review, not automatic fixes.
@@ -97,6 +109,7 @@ Before final output, check for:
 - Russian leftovers
 - inconsistent glossary terms
 - overly literal Bulgarian
+- mismatched formal/informal address, especially unnecessary `Вие` in player-facing UI
 - possible translation ballast / literal phrase that should be manually reviewed
 - UI text that is obviously too long for its likely control
 

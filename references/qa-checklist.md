@@ -26,6 +26,8 @@ Use this checklist before returning edited or reviewed localization files.
 - Unnecessary literal fragments are avoided when Bulgarian already implies them, such as `through the air` after `изстрелва`, `into pieces` after `разбива`, or redundant `nearby`, unless they carry gameplay information.
 - Dialogue preserves character voice, register, humor, urgency, and emotional tone.
 - Unknown player gender is handled without unnecessary forced gendering where possible.
+- Player-facing UI, tutorials, objectives, and generic prompts do not default to formal `Вие` unless project style or context requires it.
+- Address/register is consistent inside the same character, faction, narrator, or UI system.
 - Capitalization follows Bulgarian norms unless project style says otherwise.
 - Repeated mechanics, item types, factions, and menu labels match the glossary or existing project usage.
 
@@ -41,5 +43,6 @@ Use this checklist before returning edited or reviewed localization files.
 - Summarize changed areas briefly.
 - List uncertain strings separately with key/ID/location and reason.
 - Mention any strings that may be too long for UI.
+- List possible formal/informal address mismatches separately when they need project-level judgment.
 - List possible translation ballast separately when it needs human judgment.
 - Mention any glossary conflicts or missing glossary decisions.
