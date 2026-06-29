@@ -33,6 +33,14 @@ This skill can be used together with [`bg-text`](https://github.com/AcTePuKc/bg-
 ```text
 .
 ├── SKILL.md
+├── .agents/
+│   └── skills/bg-game-translation-qa/SKILL.md
+├── .claude/
+│   └── skills/bg-game-translation-qa/SKILL.md
+├── .cursor/
+│   └── skills/bg-game-translation-qa/SKILL.md
+├── .gemini/
+│   └── skills/bg-game-translation-qa/SKILL.md
 ├── agents/
 │   └── openai.yaml
 └── references/
@@ -41,6 +49,8 @@ This skill can be used together with [`bg-text`](https://github.com/AcTePuKc/bg-
     ├── placeholders.md
     └── qa-checklist.md
 ```
+
+The root `SKILL.md` is the canonical Codex skill. The `.agents`, `.claude`, `.cursor`, and `.gemini` files are lightweight repo-scoped adapters for tools that scan those folders.
 
 ## Installation
 
