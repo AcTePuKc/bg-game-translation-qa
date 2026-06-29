@@ -54,6 +54,27 @@ Prefer culturally appropriate Bulgarian translation over transliteration when po
 
 When speaker or player gender is unknown, avoid forced gendered phrasing where Bulgarian allows a neutral construction. Do not introduce Russian- or Ukrainian-sounding phrasing. Avoid unnecessary capitalization copied from English headings, item names, or UI labels unless the project style requires it.
 
+### Translation Ballast
+
+Flag source phrases that are technically translated but add unnecessary weight in Bulgarian UI text. Treat these as QA warnings for manual review, not automatic fixes.
+
+Use severity `low` and action `manual review` for possible translation ballast. Keep the phrase when it carries real gameplay, spatial, targeting, timing, or mechanical information.
+
+Common examples:
+
+- `through the air` after verbs like `shoot`, `fire`, `throw`, or `launch`
+  - `shoots arrows through the air` -> `изстрелва стрели`
+  - flag overly literal variants like `изстрелва стрели във въздуха` unless air travel is mechanically relevant
+- `nearby` when proximity is already implied by the Bulgarian sentence
+  - `when enemies are nearby` -> `когато има врагове наблизо`
+  - `when senses lifeforms nearby` -> `когато усети живи същества наблизо`
+  - keep `наблизо` when it defines detection radius, targeting, trigger range, or location
+- `into pieces` / `apart` after verbs that already imply breaking
+  - `smashing things apart` -> `разбиване на неща`
+  - avoid forced phrasing like `разбиване на неща на парчета` unless fragments/pieces matter
+- `on the ground`, `in front of you`, `with your hands`, or `by hand` when the Bulgarian verb or context already implies the information
+  - keep them when they carry real position, input, crafting, or interaction constraints
+
 Read `references/bg-text.md` for practical Bulgarian style guidance and `references/glossary-template.md` when creating or extending a project glossary.
 
 ## Relationship to bg-text
@@ -76,6 +97,7 @@ Before final output, check for:
 - Russian leftovers
 - inconsistent glossary terms
 - overly literal Bulgarian
+- possible translation ballast / literal phrase that should be manually reviewed
 - UI text that is obviously too long for its likely control
 
 Read `references/qa-checklist.md` for a practical final review pass.

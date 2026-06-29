@@ -22,6 +22,8 @@ Use this checklist before returning edited or reviewed localization files.
 
 - The Bulgarian reads naturally and does not follow English word order mechanically.
 - UI labels are concise and likely to fit their controls.
+- Possible translation ballast is flagged as `low` severity for manual review, not auto-fixed.
+- Unnecessary literal fragments are avoided when Bulgarian already implies them, such as `through the air` after `изстрелва`, `into pieces` after `разбива`, or redundant `nearby`, unless they carry gameplay information.
 - Dialogue preserves character voice, register, humor, urgency, and emotional tone.
 - Unknown player gender is handled without unnecessary forced gendering where possible.
 - Capitalization follows Bulgarian norms unless project style says otherwise.
@@ -39,4 +41,5 @@ Use this checklist before returning edited or reviewed localization files.
 - Summarize changed areas briefly.
 - List uncertain strings separately with key/ID/location and reason.
 - Mention any strings that may be too long for UI.
+- List possible translation ballast separately when it needs human judgment.
 - Mention any glossary conflicts or missing glossary decisions.

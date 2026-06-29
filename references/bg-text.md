@@ -36,6 +36,7 @@ Use this reference for practical Bulgarian game localization choices. It is a st
 ## Common Risks
 
 - Literal English syntax that sounds unnatural in Bulgarian.
+- Translation ballast: literal fragments that are technically correct but unnecessary in Bulgarian UI text, such as redundant `through the air`, `into pieces`, `apart`, `nearby`, `on the ground`, or `in front of you`. Flag for manual review, not automatic removal.
 - Russian or Ukrainian lexical leftovers in Bulgarian text.
 - Overlong UI strings that will not fit buttons, tabs, or compact HUD elements.
 - Inconsistent translations of repeated mechanics such as save, load, skill, perk, quest, damage, armor, health, stamina, mana, cooldown, and crafting.
